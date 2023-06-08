@@ -265,6 +265,7 @@ tr:last-child td:first-child { border-radius: 0 0 0 10px; }
 }
 .traits tbody tr td:last-child {
     text-align: left;
+    font-family: wildfrost;
 }
 
 .traits tbody tr th {
@@ -274,8 +275,9 @@ tr:last-child td:first-child { border-radius: 0 0 0 10px; }
     border-right: none;
     border-bottom: none;
 }
-.traits tbody tr td:nth-child(2) {
+.traits tbody tr td:nth-child(2), .trait {
     color: #b32400;
+    font-family: wildfrost;
 }
 .traits tbody tr td:nth-child(3) {
     font-style: italic;
