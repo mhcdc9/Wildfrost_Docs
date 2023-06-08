@@ -279,9 +279,6 @@ tr:last-child td:first-child { border-radius: 0 0 0 10px; }
     color: #b32400;
     font-family: wildfrost;
 }
-.traits tbody tr td:nth-child(3) {
-    font-style: italic;
-}
 
 .reward_pools {
     width: 35%;
