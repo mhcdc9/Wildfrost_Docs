@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<head>
+    <meta charset=utf-8>
+    <title>References - Wildfrost Modding</title>
+    <meta content="width=device-width,initial-scale=1,user-scalable=no" name=viewport>
+    <meta content="Wildfrost Modding Documentation" name=description>
+    <link rel="icon" type="image/png" href="../favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <style>html {background-color:#f4f5f7} body {display:none}</style>
+</head>
+<body>
+
+
+<div class="logo_outer">
+    <img class="logo_inner" src="assets/wildfrost_modding_7.png" alt="website logo">
+</div>
+<div class="combiner_outer"><div class="combiner_inner"></div></div>
+<ul class="nav" style="position: sticky; top: 0; z-index: 1; margin-left: 145px">
+    <li><div class="separator"></div></li>
+    <li><a href="#">Installing Mods</a></li>
+    <li><a href="#">Creating Mods</a></li>
+    <li><a href="#" class="active">References</a></li>
+</ul>
+
+<ul class="nav side_nav">
+    <li>.</li>
+    <li><a class="side_nav_header">References</a></li>
+    <li><a href="#traits">Traits</a></li>
+    <li><a href="#effects">Effects</a></li>
+    <li><a href="#reward_pools">Reward Pools</a></li>
+    <li><a href="#blood_profiles">Blood Profiles</a></li>
+    <li><a href="#idle_animations">Idle Animations</a></li>
+    <li><a href="#target_modes">Target Modes</a></li>
+    <li><a href="#card_types">Card Types</a></li>
+    <li><a href="#charms">Charms</a></li>
+</ul>
+
+<div id="top" class="content">
+    <br>
+    <h2 id="traits">Traits</h2>
+    <p>
+        Describe Traits here
+    </p>
+    <table class="traits">
+        <thead>
+        <tr>
+            <th>API Name</th>
+            <th>In Game Name</th>
+            <th>Uses Count</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Aimless</td>
+            <td>Aimless</td>
+            <td class="no">No</td>
+            <td>Hits a random target in the row</td>
+        </tr>
+        <tr>
+            <td>Barrage</td>
+            <td>Barrage</td>
+            <td class="no">No</td>
+            <td>Hits all targets in the row</td>
+        </tr>
+        <tr>
+            <td>Combo</td>
+            <td>Critical</td>
+            <td>CHECK</td>
+            <td>Double effects if this is the rightmost card in your hand</td>
+        </tr>
+        <tr>
+            <td>Bombard1</td>
+            <td>Bombard</td>
+            <td>CHECK</td>
+            <td>Hits all targets in <img class="icon" src="assets/icons/target.png" alt="target"> areas <span class="ref_note">(<img class="icon" src="assets/icons/target.png" alt="target"> on enemy side)</span></td>
+        </tr>
+        <tr>
+            <td>Bombard2</td>
+            <td>CHECK</td>
+            <td>CHECK</td>
+            <td>CHECK</td>
+        </tr>
+        <tr>
+            <td>Crush</td>
+            <td>Crush</td>
+            <td>CHECK</td>
+            <td>Destroys a random junk in your hand if possible, otherwise destroys a random item</td>
+        </tr>
+        <tr>
+            <td>Consume</td>
+            <td>Consume</td>
+            <td class="no">No</td>
+            <td>Can only be used once per battle</td>
+        </tr>
+        <tr>
+            <td>Draw</td>
+            <td>Draw</td>
+            <td class="yes">Yes</td>
+            <td>Draw cards in your hand</td>
+        </tr>
+        <tr>
+            <td>Effigy</td>
+            <td>Faith</td>
+            <td class="yes">Yes</td>
+            <td>Increases summons's <img class="icon" src="assets/icons/attack.png" alt="attack"> and <img class="icon" src="assets/icons/health.png" alt="health"></td>
+        </tr>
+        <tr>
+            <td>Explode</td>
+            <td>Explode</td>
+            <td class="yes">Yes</td>
+            <td>When destroyed, deals damage to all enemies in the row</td>
+        </tr>
+        <tr>
+            <td>Frontline</td>
+            <td>Frontline</td>
+            <td class="no">No</td>
+            <td>Deploys to the front of the row</td>
+        </tr>
+        <tr>
+            <td>Backline</td>
+            <td>Backline</td>
+            <td class="no">No</td>
+            <td>Deploys to the back of the row</td>
+        </tr>
+        <tr>
+            <td>Fury</td>
+            <td>Fury</td>
+            <td class="yes">Yes</td>
+            <td>Deals additional damage while alone in a row</td>
+        </tr>
+        <tr>
+            <td>Greed</td>
+            <td>Greed</td>
+            <td class="no">No</td>
+            <td>Deal 1 additional damage for each 50 <img class="icon" src="assets/icons/bling.png" alt="bling"> you have</td>
+        </tr>
+        <tr>
+            <td>Hellbent</td>
+            <td>Hellbent</td>
+            <td class="no">No</td>
+            <td>Cannot be injured <span class="ref_note">(doesn't seem to work)</span></td>
+        </tr>
+        <tr>
+            <td>Knockback</td>
+            <td>Boop</td>
+            <td class="yes">Yes</td>
+            <td>Knock back target <span class="ref_note">(pushes target backwards)</span></td>
+        </tr>
+        <tr>
+            <td>Longshot</td>
+            <td>Longshot</td>
+            <td class="no">No</td>
+            <td>Hit the furthest target in the row</td>
+        </tr>
+        <tr>
+            <td>Noomlin</td>
+            <td>Noomlin</td>
+            <td class="no">No</td>
+            <td>Does not end your turn when played</td>
+        </tr>
+        <tr>
+            <td>Pigheaded</td>
+            <td>Hogheaded</td>
+            <td class="no">No</td>
+            <td>Cannot be recalled</td>
+        </tr>
+        <tr>
+            <td>Pull</td>
+            <td>Yank</td>
+            <td class="no">No</td>
+            <td>Pull target to front</td>
+        </tr>
+        <tr>
+            <td>Recycle</td>
+            <td>Recycle</td>
+            <td class="yes">Yes</td>
+            <td>Requires Junk in your hand to play, destroys the Jung afterwards</td>
+        </tr>
+        <tr>
+            <td>Smackback</td>
+            <td>Smackback</td>
+            <td class="no">No</td>
+            <td>Counterattack after taking a hit</td>
+        </tr>
+        <tr>
+            <td>Soulbound</td>
+            <td>Soulbound</td>
+            <td class="no">No</td>
+            <td>Take 100 damage when other Soulbound cards are Sacrificed</td>
+        </tr>
+        <tr>
+            <td>Spark</td>
+            <td>Spark</td>
+            <td class="no">No</td>
+            <td>Trigger immediately when deployed. Cannot be recalled</td>
+        </tr>
+        <tr>
+            <td>Summoned</td>
+            <td>Summoned</td>
+            <td class="no">No</td>
+            <td>Loses health after triggering & cannot be recalled</td>
+        </tr>
+        <tr>
+            <td>Trash</td>
+            <td>Trash</td>
+            <td class="yes">Yes</td>
+            <td>Add Junk to your hand</td>
+        </tr>
+        <tr>
+            <td>Unmovable</td>
+            <td>Unmovable</td>
+            <td class="no">No</td>
+            <td>Cannot be moved</td>
+        </tr>
+        <tr>
+            <td>Wild</td>
+            <td>Wild</td>
+            <td class="no">No</td>
+            <td class="left last_cell">Gain x1 <img class="icon" src="assets/icons/frenzy.png" alt="frenzy"> when other Wild cards are killed</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <h2 id="effects">Effects</h2>
+    <p>
+        Describe Effects here
+    </p>
+    <table class="traits">
+        <thead>
+        <tr>
+            <th>API Name</th>
+            <th>In Game Name</th>
+            <th>Uses Count</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <br>
+
+    <h2 id="reward_pools">Reward Pools</h2>
+    <p>
+        Describe Reward Pools here
+    </p>
+    <table class="reward_pools">
+        <thead>
+        <tr>
+            <th>Clan</th>
+            <th>Type</th>
+            <th>API Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="3">All</td>
+            <td>Item</td>
+            <td>BasicItemPool</td>
+        </tr>
+        <tr>
+            <td>Unit</td>
+            <td>BasicUnitPool</td>
+        </tr>
+        <tr>
+            <td>Charm</td>
+            <td>BasicCharmPool</td>
+        </tr>
+        <tr>
+            <td rowspan="3">
+                <img src="assets/tribes/snowdwellers.png" alt="Snowdwellers Tribe Flag" width="80px">
+                <br> Snowdwellers
+            </td>
+            <td>Item</td>
+            <td>GeneralItemPool</td>
+        </tr>
+        <tr>
+            <td>Unit</td>
+            <td>GeneralUnitPool</td>
+        </tr>
+        <tr>
+            <td>Charm</td>
+            <td>GeneralCharmPool</td>
+        </tr>
+        <tr>
+            <td rowspan="3">
+                <img src="assets/tribes/shademancers.png" alt="Shademancers Tribe Flag" width="80px">
+                <br> Shademancers
+            </td>
+            <td>Item</td>
+            <td>MagicItemPool</td>
+        </tr>
+        <tr>
+            <td>Unit</td>
+            <td>MagicUnitPool</td>
+        </tr>
+        <tr>
+            <td>Charm</td>
+            <td>MagicCharmPool</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="rowspan">
+                <img src="assets/tribes/clunkmasters.png" alt="Clunkmasters Tribe Flag" width="80px">
+                <br> Clunkmasters
+            </td>
+            <td>Item</td>
+            <td>ClunkItemPool</td>
+        </tr>
+        <tr>
+            <td>Unit</td>
+            <td>ClunkUnitPool</td>
+        </tr>
+        <tr>
+            <td>Charm</td>
+            <td class="last_cell">ClunkCharmPool</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <h2 id="blood_profiles">Blood Profiles</h2>
+    <p>
+        Describe Blood Profiles here. Honestly, don't really know how this works yet
+    </p>
+
+    <br>
+
+    <h2 id="idle_animations">Idle Animation</h2>
+    <p>
+        Describe Idle Animation here
+    </p>
+    <div>
+        Show the 13 animations with 13 units that already use it here
+    </div>
+
+    <br>
+
+    <h2 id="target_modes">Target Mode</h2>
+    <p>
+        Describe Target Mode here
+    </p>
+    <table class="target_mode">
+        <thead>
+        <tr>
+            <th>API Name</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>TargetModeAll</td>
+            <td>Targets all enemies</td>
+        </tr>
+        <tr>
+            <td>TargetModeAllUndamaged</td>
+            <td>Targets all undamaged enemies</td>
+        </tr>
+        <tr>
+            <td>TargetModeBack</td>
+            <td>Targets the enemy at the back of the row (<span style="color: #b32400">Longshot</span>)</td>
+        </tr>
+        <tr>
+            <td>TargetModeBasic</td>
+            <td>Targets the enemy at the front of the row</td>
+        </tr>
+        <tr>
+            <td>TargetModeRandom</td>
+            <td>Targets a random enemy in the row (<span style="color: #b32400">Aimless</span>)</td>
+        </tr>
+        <tr>
+            <td>TargetModeRow</td>
+            <td>Targets all enemies in the row (<span style="color: #b32400">Barrage</span>)</td>
+        </tr>
+        <tr>
+            <td>TargetModeCrowns</td>
+            <td class="last_cell">
+                Targets all enemies with
+                <img class="icon_ls" src="assets/icons/crown.png" alt="crown"> /
+                <img class="icon" src="assets/icons/enemy%20crown.png" alt="crown">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2 id="card_types">Card Types</h2>
+    <p>
+        Describe Card Types here, including side affects
+    </p>
+    <img src="assets/cards/item.png" class="wf_card" alt="item card"> TODO: Add rest
+    <div class="wf_card_name" style="margin-left: 104px">Item</div>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+</div>
+</body>
