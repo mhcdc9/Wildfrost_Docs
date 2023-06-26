@@ -310,6 +310,13 @@ tr:last-child td:first-child { border-radius: 0 0 0 10px; }
     font-family: wildfrost;
 }
 
+.charms tbody tr td:nth-child(2) {
+    color: inherit;
+}
+.charms tbody tr td:nth-child(3) {
+    text-align: left;
+}
+
 .reward_pools {
     width: 35%;
 }
@@ -347,6 +354,10 @@ tr:last-child td:first-child { border-radius: 0 0 0 10px; }
 .effect-icon-sm {
     margin-bottom: -2px;
     height: 1.2em;
+}
+
+.charm {
+    height: 3em;
 }
 
 .icon {

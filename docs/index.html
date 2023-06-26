@@ -403,22 +403,343 @@
     <p>
         Describe Card Upgrades here, including side affects
     </p>
-    <table class="traits">
+    <table class="traits charms">
         <thead>
         <tr>
             <th>Icon</th>
-            <th>API Name</th>
             <th>In Game Name</th>
+            <th>API Name</th>
             <th>Description</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td colspan="4" style="text-align: center">To be filled</td>
+            <td><img style="height: 2em;" src="assets/icons/crown.png"></td>
+            <td>Crown</td>
+            <td>Crown</td>
+            <td>Cards with Crowns are always played at the start of battle</td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/acorn.png"></td>
+            <td>Acorn</td>
+            <td>CardUpgradeAcorn</td>
+            <td>Gain <ref>8</ref> <icon>Shell</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/balance.png"></td>
+            <td>Balance</td>
+            <td>CardUpgradeBalanced</td>
+            <td>Set <icon>Health</icon>, <icon>Attack</icon> and <icon>Counter</icon> to <ref>3</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/battle.png"></td>
+            <td>Battle</td>
+            <td>CardUpgradeBattle</td>
+            <td><ref>+2</ref> <icon>Attack</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/bite.png"></td>
+            <td>Bite</td>
+            <td>CardUpgradeSpiky</td>
+            <td>Start with <ref>4</ref> <icon>Teeth</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/bling.png"></td>
+            <td>Bling</td>
+            <td>CardUpgradeBling</td>
+            <td>Gain <ref>5</ref> <icon>Bling</icon> from each kill</td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/block.png"></td>
+            <td>Block</td>
+            <td>CardUpgradeBlock</td>
+            <td>Start with <ref>1</ref> <icon>Block</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/bom.png"></td>
+            <td>Bom</td>
+            <td>CardUpgradeBom</td>
+            <td>Apply 1 <icon>Bom</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/bombskull.png"></td>
+            <td>Bombskull</td>
+            <td>CardUpgradeBombskull</td>
+            <td>When destroyed, deal <ref>8</ref> damage to enemies in the row</td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/boonfire.png"></td>
+            <td>Boonfire</td>
+            <td>CardUpgradeConsumeOverload</td>
+            <td>When consumed apply <ref>2</ref> <icon>Overload</icon> to all enemies</td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/bread.png"></td>
+            <td>Bread</td>
+            <td>CardUpgradeConsume</td>
+            <td>Gain <ref>Consume</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/cake.png"></td>
+            <td>Cake</td>
+            <td>CardUpgradeCake</td>
+            <td>Boost effects by <ref>5</ref> and gain <ref>Consume</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/chuckle.png"></td>
+            <td>Chuckle</td>
+            <td>CardUpgradeRemoveCharmLimit</td>
+            <td>Remove Charm limit</td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/cloudberry.png"></td>
+            <td>Cloudberry</td>
+            <td>CardUpgradeCloudberry</td>
+            <td>Restore <ref>2</ref> <icon>Health</icon> on kill</td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/critical.png"></td>
+            <td>Critical</td>
+            <td>CardUpgradeCritical</td>
+            <td>Gain <ref>Critical</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/durian.png"></td>
+            <td>Durian</td>
+            <td>CardUpgradeAttackRemoveEffects</td>
+            <td><ref>+4</ref> <icon>Attack</icon>, Remove all effects</td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/flameblade.png"></td>
+            <td>Flameblade</td>
+            <td>CardUpgradeOverload</td>
+            <td>Replace current <icon>Attack</icon> with apply <icon>Overload</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/frenzy.png"></td>
+            <td>Frenzy</td>
+            <td>CardUpgradeFrenzyConsume</td>
+            <td>Add <ref>x1</ref> <icon>Frenzy</icon> and gain <ref>Consume</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/frog.png"></td>
+            <td>Frog</td>
+            <td>CardUpgradeFury</td>
+            <td>Gain <ref>Fury 3</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/frosthand.png"></td>
+            <td>Frosthand</td>
+            <td>CardUpgradeFrosthand</td>
+            <td>Apply <ref>1</ref> <icon>Frost</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/gnome.png"></td>
+            <td>Gnome</td>
+            <td>CardUpgradeWildcard</td>
+            <td>Add <ref>x1</ref> <icon>Frenzy</icon> and gain <ref>Aimless</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/goat.png"></td>
+            <td>Goat</td>
+            <td>CardUpgradeDemonize</td>
+            <td>Apply 1 <icon>Demonize</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/greed.png"></td>
+            <td>Greed</td>
+            <td>CardUpgradeGreed</td>
+            <td>Gain <ref>Greed</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/heart.png"></td>
+            <td>Heart</td>
+            <td>CardUpgradeHeart</td>
+            <td><ref>+5</ref> <icon>Health</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/hog.png"></td>
+            <td>Hog</td>
+            <td>CardUpgradePig</td>
+            <td>Add <ref>HogHeaded</ref>, <ref>+7</ref> <icon>Health</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/hook.png"></td>
+            <td>Hook</td>
+            <td>CardUpgradeHook</td>
+            <td>Gain <ref>Yank</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/lamb.png"></td>
+            <td>Lamb</td>
+            <td>CardUpgradeEffigy</td>
+            <td>Gain <ref>Faith 2</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/lumin_ring.png"></td>
+            <td>Lumin Ring</td>
+            <td>CardUpgradeBoost</td>
+            <td>Boost effects by <ref>1</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/moko.png"></td>
+            <td>Moko</td>
+            <td>CardUpgradeFrenzyReduceAttack</td>
+            <td>Add <ref>x1</ref> <icon>Frenzy</icon>, <ref>-2</ref> <icon>Attack</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/molten_egg.png"></td>
+            <td>Molten Egg</td>
+            <td>CardUpgradeAttackConsume</td>
+            <td>Gain <ref>Consume</ref>, <ref>+5</ref> <icon>Attack</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/moose.png"></td>
+            <td>Moose</td>
+            <td>CardUpgradeAttackIncreaseCounter</td>
+            <td>Increase <icon>Counter</icon> by <ref>1</ref>, <ref>+3</ref> <icon>Attack</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/noomlin.png"></td>
+            <td>Noomlin</td>
+            <td>CardUpgradeNoomlin</td>
+            <td>Gain <ref>Noomlin</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/pengu.png"></td>
+            <td>Pengu</td>
+            <td>CardUpgradeSnowImmune</td>
+            <td>When <icon>Snow</icon>'d, gain equal <icon>Attack</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/peppernut.png"></td>
+            <td>Peppernut</td>
+            <td>CardUpgradeShellBecomesSpice</td>
+            <td>When <icon>Shell</icon>'d, gain <icon>Spice</icon> instead</td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/pinch.png"></td>
+            <td>Pinch</td>
+            <td>CardUpgradeDraw</td>
+            <td>Gain <ref>Draw 2</ref> on kill</td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/pomegranate.png"></td>
+            <td>Pomegranate</td>
+            <td>CardUpgradeBarrage</td>
+            <td>Gain <ref>Barrage</ref> and reduce <icon>Attack</icon> by <ref>2</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/punchfist.png"></td>
+            <td>Punchfist</td>
+            <td>CardUpgradePunchfist</td>
+            <td>Gain <ref>Smackback</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/raspberry.png"></td>
+            <td>Raspberry</td>
+            <td>CardUpgradeAttackAndHealth</td>
+            <td><ref>+1</ref> <icon>Attack</icon>, <ref>+3</ref> <icon>Health</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/recycle.png"></td>
+            <td>Recycle</td>
+            <td>CardUpgradeCrush</td>
+            <td>Gain <ref>Recycle 1</ref>, <ref>+3</ref> <icon>Attack</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/scrap.png"></td>
+            <td>Scrap</td>
+            <td>CardUpgradeScrap</td>
+            <td>Add <ref>1</ref> <icon>Scrap</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/shield.png"></td>
+            <td>Shield</td>
+            <td>CardUpgradeShellOnKill</td>
+            <td>Gain <ref>3</ref> <icon>Shell</icon> on kill</td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/shroom.png"></td>
+            <td>Shroom</td>
+            <td>CardUpgradeShroom</td>
+            <td>Apply <ref>1</ref> <icon>Shroom</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/snowball.png"></td>
+            <td>Snowball</td>
+            <td>CardUpgradeSnowball</td>
+            <td>Apply <ref>1</ref> <icon>Snow</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/spark.png"></td>
+            <td>Spark</td>
+            <td>CardUpgradeSpark</td>
+            <td>Gain <ref>Spark</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/spice.png"></td>
+            <td>Spice</td>
+            <td>CardUpgradeSpice</td>
+            <td>Gain <ref>2</ref> <icon>Spice</icon> when hit</td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/squid.png"></td>
+            <td>Squid</td>
+            <td>CardUpgradeInk</td>
+            <td>Apply <ref>3</ref> <icon>Ink</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/strawberry.png"></td>
+            <td>Strawberry</td>
+            <td>CardUpgradeConsumeAddHealth</td>
+            <td>When consumed add <ref>+2</ref> <icon>Health</icon> to all allies</td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/sun.png"></td>
+            <td>Sun</td>
+            <td>CardUpgradeSun</td>
+            <td>Reduce <icon>Counter</icon> by <ref>1</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/tiger.png"></td>
+            <td>Tiger</td>
+            <td>CardUpgradeTeethWhenHit</td>
+            <td>Gain <ref>1</ref> <icon>Teeth</icon> when hit</td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/trash.png"></td>
+            <td>Trash</td>
+            <td>CardUpgradeTrash</td>
+            <td>Gain <ref>Trash 1</ref></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/truffle.png"></td>
+            <td>Truffle</td>
+            <td>CardUpgradeShroomReduceHealth</td>
+            <td>Apply <ref>3</ref> <icon>Shroom</icon>, <ref>-2</ref> <icon>Health</icon></td>
+        </tr>
+        <tr>
+            <td><img class="charm" src="assets/charms/weakness.png"></td>
+            <td>Weakness</td>
+            <td>CardUpgradeWeakness</td>
+            <td>Reduce <icon>Attack</icon> by <ref>2</ref></td>
         </tr>
         </tbody>
     </table>
 
     <div class="spacer"></div>
 </div>
+<script type="text/javascript">
+    for (const icon of document.getElementsByTagName("icon")) {
+        const name = icon.innerHTML;
+        const lc = name.toLowerCase();
+        icon.innerHTML = '<img class="effect-icon" src="assets/icons/' + lc + '.png" alt="' + name + '" title="' + name + '">';
+    }
+    for (const icon of document.getElementsByTagName("icon-sm")) {
+        const name = icon.innerHTML;
+        const lc = name.toLowerCase();
+        icon.innerHTML = '<img class="effect-icon-sm" src="assets/icons/' + lc + '.png" alt="' + name + '" title="' + name + '">';
+    }
+</script>
 </body>
