@@ -35,12 +35,12 @@ body {
 }
 
 a {
-    color: #04905d;
-    font-weight: bold;
+    color: inherit;
     text-decoration: none;
+    border-bottom: 1px solid black
 }
 a:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid black;
 }
 
 .nav {
@@ -67,6 +67,7 @@ a:hover {
 
 .nav li a:not(.active) {
     padding-top: 6px;
+    border-bottom: none;
 }
 
 .nav li a.active {
@@ -111,7 +112,7 @@ a:hover {
 }
 .combiner_inner {
     background-color: #333333;
-    width: 145px;
+    width: 155px;
     height: 80px;
     overflow: visible;
     z-index: 1;
@@ -256,6 +257,35 @@ tr:last-child td:first-child { border-radius: 0 0 0 10px; }
     text-align: left;
 }
 
+.effects {
+}
+
+
+.effects tbody tr th:nth-child(2) {
+    width: 120px;
+    word-wrap: break-word;
+}
+.effects tbody tr td:nth-child(2) {
+    max-width: 120px;
+    word-wrap: break-word;
+}
+.effects tbody tr td:last-child {
+    text-align: left;
+    font-family: wildfrost;
+}
+
+.ref, ref {
+    color: #b32400;
+}
+
+.effects tbody tr td:nth-child(1) {
+    display: none;
+}
+.effects thead tr th:nth-child(1) {
+    display: none;
+}
+
+
 .traits {
     width: 60%;
 }
@@ -309,6 +339,15 @@ tr:last-child td:first-child { border-radius: 0 0 0 10px; }
     text-align: left;
 }
 
+.effect-icon {
+    margin-bottom: -6px;
+    height: 1.4em;
+    color: #b32400;
+}
+.effect-icon-sm {
+    margin-bottom: -2px;
+    height: 1.2em;
+}
 
 .icon {
     height: 1em;
@@ -317,6 +356,22 @@ tr:last-child td:first-child { border-radius: 0 0 0 10px; }
 .icon_ls {
     height: 1em;
     margin-bottom: -1px;
+}
+
+.crash {
+    color: #900;
+    padding: 6px;
+    margin-right: 2px;
+    border: 2px solid #900;
+    border-radius: 12px;
+    background-color: #9002
+}
+.crash img {
+    height: 1em;
+    margin-bottom: -2px;
+    transform: scale(1.75);
+    margin-right: 10px;
+    margin-left: 2px;
 }
 
 .wf_card {
@@ -329,7 +384,7 @@ tr:last-child td:first-child { border-radius: 0 0 0 10px; }
     margin-top: -168px;
 }
 
-.ref_note {
+.ref_note, note {
     font-style: italic;
     color: #333;
 }
@@ -378,6 +433,9 @@ tr:last-child td:first-child { border-radius: 0 0 0 10px; }
         font-size: 14px;
     }
     .side_nav {
+        width: 145px;
+    }
+    .combiner_inner {
         width: 145px;
     }
     .version {
