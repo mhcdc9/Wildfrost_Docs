@@ -46,18 +46,20 @@
     </script>
 </head>
 <body>
+<h3>About</h3>
 <p>
-    Redirects to
-    <a href="https://docs.google.com/spreadsheets/d/1YGf_4x-XcwxzF31fXmWUjwjb-sCV7G5s_ues02ruWo0/edit">https://docs.google.com/spreadsheets/d/1YGf_4x-XcwxzF31fXmWUjwjb-sCV7G5s_ues02ruWo0/edit</a>
+    This page redirects to specific pages in the public
+    <a href="href=https://docs.google.com/spreadsheets/d/1YGf_4x-XcwxzF31fXmWUjwjb-sCV7G5s_ues02ruWo0/edit">Wildfrost Modding Reference spreadsheet</a>,
+    replacing the <a href="old/index.html">old unofficial reference pages</a>.
 </p>
 <p>
-    Old unfinished docs page can be found <a href="old/index.html">here</a>
+    <a href="https://docs.google.com/spreadsheets/d/1YGf_4x-XcwxzF31fXmWUjwjb-sCV7G5s_ues02ruWo0/edit">Click here</a> if the redirect didn't work.
 </p>
 <h3>Usage</h3>
-<p>
-    wildfrost.jakobt.dev/#&lt;page&gt;<br>
-    wildfrost.jakobt.dev/#&lt;sheet gid&gt;
-</p>
+<ul>
+    <li>wildfrost.jakobt.dev/#&lt;page&gt;</li>
+    <li>wildfrost.jakobt.dev/#&lt;sheet gid&gt;</li>
+</ul>
 <h3>Current Pages</h3>
 <ul>
     <li><a href="#effects">effects</a></li>
@@ -75,9 +77,20 @@
     <li><a href="#campaign_node_types">campaign_node_types</a></li>
 </ul>
 <h3>Adding sheet to page list</h3>
-<p>Github Account Required</p>
-<ol>
-    <li>WIP</li>
-</ol>
+<details>
+    <summary>Click for instruction</summary>
+    <p>Github Account Required</p>
+    <ol>
+        <li>Goto the page's <a href="https://github.com/Minenash/Wildfrost_Docs/blob/main/docs/index.html">index.html</a> file on Github</li>
+        <li>Click the pencil icon</li>
+        <li>Find the big switch statement on line 21</li>
+        <li>Find the sheet's gid by going to the sheet and copying the number after "gid=" at the end of the url</li>
+        <li>Add a line with the sheet name (without any spaces or underscores) and the gid of the sheet</li>
+        <li>Go down to the Current Pages section and add your line</li>
+        <li>Press "Commit changes" at the top</li>
+        <li>Wait for your PR to be merged</li>
+    </ol>
+</details>
+
 </body>
 </html>
